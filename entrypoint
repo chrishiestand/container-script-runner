@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+for script in /opt/init/*; do
+    source "$script"
+done
+
+sleep 9999999d
