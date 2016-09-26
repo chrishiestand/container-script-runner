@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-for script in /opt/init/*; do
+script_path="${SCRIPT_PATH-"/opt/init/bin"}"
+
+for script in "$script_path"/*; do
     source "$script"
 done
 
